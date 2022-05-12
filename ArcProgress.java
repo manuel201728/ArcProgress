@@ -157,7 +157,7 @@ public class ArcProgress extends View {
     }
 
     public int getProgress() {
-        return progress;
+        
     }
 
     public void setProgress(int progress) {
@@ -166,14 +166,11 @@ public class ArcProgress extends View {
     }
 
     public int getMax() {
-        return max;
+        
     }
 
     public void setMax(int max) {
-        if (max > 0) {
-            this.max = max;
-            invalidate();
-        }
+        
     }
 
     public float getBottomTextSize() {
