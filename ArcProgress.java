@@ -156,9 +156,24 @@ public class ArcProgress extends View {
         this.invalidate();
     }
 
+    public int getProgress() {
+        return progress;
+    }
+
     public void setProgress(int progress) {
         this.progress = progress;
         invalidate();
+    }
+
+    public int getMax() {
+        return max;
+    }
+
+    public void setMax(int max) {
+        if (max > 0) {
+            this.max = max;
+            invalidate();
+        }
     }
 
     public float getBottomTextSize() {
